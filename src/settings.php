@@ -8,10 +8,16 @@ return [
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
         ],
+        
+        'nozomi' => [
+            'pages_path' => __DIR__ . '/../nozomi/templates',
+            'cache_path' => false,
+            'data_path' => __DIR__ . '../nozomi/data',
+        ],
 
         // Monolog settings
         'logger' => [
-            'name' => 'slim-app',
+            'name' => 'nozomi_site',
             'path' => isset($_ENV['docker']) ? 'php://stdout' : __DIR__ . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],

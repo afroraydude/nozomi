@@ -18,8 +18,12 @@ class Content {
 
     $x = $conn->query("SELECT `template`,`content`,`page-title` FROM pages WHERE `name` = '$page' LIMIT 1")->fetch();
 
-    $template = 'themes/'.$config['theme'].'/'.$x['template'];
+    if($x) {
+      $template = 'themes/'.$config['theme'].'/'.$x['template'];
 
-    return $app->siteRenderer->render($rs, $template, $x);
+      return $app->siteRenderer->render($rs, $template, $x);
+    } else {
+      return $app->nozomiRenderer->render($rs, '404.html');
+    }
   }
 }

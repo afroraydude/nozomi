@@ -42,3 +42,7 @@ $app->post('/nozomi/setup', function (Request $request, Response $response, arra
     return $response->withRedirect('/');
   }
 });
+
+$app->get('/nozomi/login', function (Request $request, Response $response, array $args) {
+  $this->nozomiRenderer->render($response, 'login.html');
+});

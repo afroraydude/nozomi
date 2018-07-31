@@ -1,27 +1,19 @@
-# Slim Framework 3 Skeleton Application
+# Nozomi
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+Nozomi is a simple, lightweight CMS built on top of Slim Framework. It is meant to be a spiritual successor to Muttnick.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## The name
+Nozomi was generated with a project name generator. It means "hope" in Japanese.
 
-## Install the Application
+## Difference between Nozomi and Muttnick
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+Nozomi is a more robust and secure update to Muttnick. It integrates itself closer to the underlying Slim Framework and works with the internal functions better. The template system is completely changed with usage of Twig over PHP View, and removal of exposure of templates and site code outside of the public directory. Routing is cleaned up with most code being run within classes in the `nozomi` directory, as well as a lot of under the hood improvements to authentication and database interaction. Overall, Nozomi is a more secure, safer, and less buggy upgrade from Muttnick, with an all new sleek look.
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+## Install
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+### Requirements:
+* PHP 7+
+* MySQL/MariaDB
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
-
-To run the application in development, you can run these commands 
-
-	cd [my-app-name]
-	php composer.phar start
-
-Run this command in the application directory to run the test suite
-
-	php composer.phar test
-
-That's it! Now go build something cool.
+### How to install
+(Coming soon)

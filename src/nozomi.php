@@ -3,6 +3,10 @@
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+spl_autoload_register(function ($classname) {
+    require(__DIR__ . "/../nozomi/classes/" . $classname . ".php");
+});
+
 $container = $app->getContainer();
 
 //https://stackoverflow.com/questions/39559180/serving-dynamic-assets-with-slim-and-twig
@@ -22,9 +26,21 @@ $app->get('/nozomi/assets/{name:.*}', function (Request $request, Response $resp
 });
 
 $app->get('/nozomi/setup', function (Request $request, Response $response, array $args) {
-
+  $conf = new Configuration();
+  if ($conf->ConfigExists() == false) return $this->nozomiRenderer->render($response, 'setup.html');
+  else return $response->withRedirect('/');
 });
 
 $app->post('/nozomi/setup', function (Request $request, Response $response, array $args) {
-
+  $conf = new Configuration();
+  if($conf->ConfigExists() == false) {
+    $data = $request->getParsedBody();
+    if ($conf->CreateConfiguration($data)) {
+      return $response->withRedirect('/');
+    } else {
+      $this->nozomiRenderer->render($response, 'setup.html');
+    }
+  } else {
+    return $response->withRedirect('/');
+  }
 });

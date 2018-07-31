@@ -55,10 +55,12 @@ class Configuration {
       $uu = filter_var($body['user']);
       $options = [
         'cost' => 11,
-        'salt' => random_bytes(10)
+        'salt' => random_bytes(22)
       ];
-      $pass = filter_var($body['pass'])
-      $pp = password_hash($pass, PASSWORD_DEFAULT, $options);
+
+      $pass = filter_var($body['pass']);
+
+      $pp = password_hash($pass, PASSWORD_BCRYPT, $options);
 
       $config = Array (
         'sqlhost' => $s,

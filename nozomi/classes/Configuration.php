@@ -41,9 +41,11 @@ class Configuration {
 
     $admin = "INSERT INTO `users` (`username`, `password`, `role`) VALUES (?, ?, 1);";
 
-    $pages = "CREATE TABLE `pages`( `id` INT(10) NOT NULL AUTO_INCREMENT, `name` VARCHAR(260) NOT NULL DEFAULT '0', `page-title` VARCHAR(32) NOT NULL DEFAULT '0', `author` VARCHAR(50) NOT NULL DEFAULT '0', `content` TEXT NOT NULL DEFAULT '0', `template` TEXT(64) NOT NULL DEFAULT '0', `last-modified` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (`id`)) COLLATE='utf8_general_ci' ENGINE=InnoDB;";
+    $pages = "CREATE TABLE `pages`( `id` INT(10) NOT NULL AUTO_INCREMENT, `name` VARCHAR(260) NOT NULL DEFAULT '0', `page-title` VARCHAR(32) NOT NULL DEFAULT '0', `author` VARCHAR(50) NOT NULL DEFAULT '0', `content` TEXT NOT NULL DEFAULT '0', `template` TEXT(64) NOT NULL DEFAULT 'default.html', `last-modified` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (`id`)) COLLATE='utf8_general_ci' ENGINE=InnoDB;";
 
     $files = "CREATE TABLE `files`( `id` INT(10) NOT NULL, `filename` VARCHAR(64) NOT NULL, `location` VARCHAR(260) NOT NULL, `upload-timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`)) COLLATE='utf8_general_ci' ENGINE=InnoDB;";
+
+    $index = "INSERT INTO `nozomi`.`pages` (`name`, `page-title`, `author`, `content`) VALUES ('index', 'Home', 'nozomi', '<h1>Welcome to Nozomi!</h1>');";
 
     $configLocation = __DIR__ . '/../../site/config.ini';
 
@@ -77,6 +79,7 @@ class Configuration {
       $conn->prepare($admin)->execute([$uu,$pp]);
       $conn->exec($pages);
       $conn->exec($files);
+      $conn->exec($index);
 
       $this->put_ini_file($config, $configLocation);
       return true;

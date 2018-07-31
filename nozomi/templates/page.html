@@ -1,0 +1,97 @@
+<html>
+<head>
+    {% include 'header.html' %}
+    <!-- Main Quill library -->
+    <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <!-- Theme included stylesheets -->
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="page">
+    {% include 'nav.html' %}
+    <div class="container" id="msg" style="font-size:largest;">
+        <!-- you can set whatever style you want on this -->
+        Loading, please wait...
+    </div>
+    <div id="editor-container"  style="display:none;" class="container">
+        {% if content %}
+        <h1>Edit Page</h1>
+        {% else %}
+        <h1>Create Page</h1>
+        {% endif %}
+
+        <div id="editor">
+            {{ content|raw }}
+        </div>
+        <br/>
+        <button class="btn btn-primary">Submit Page</button>
+        <script>
+            var toolbarOptions = [
+                ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+                ['blockquote', 'code-block'],
+
+                [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+                [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+                [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+                [{ 'direction': 'rtl' }],                         // text direction
+
+                [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+                [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+
+                [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+                [{ 'font': [] }],
+                [{ 'align': [] }],
+
+                ['clean'],                                         // remove formatting button
+                ['link', 'image', 'video'],
+                ['showHtml']
+            ];
+
+            var quill = new Quill('#editor', {
+                modules: {
+                    toolbar: toolbarOptions
+                },
+                theme: 'snow'
+            });
+
+            var txtArea = document.createElement('textarea');
+            txtArea.style.cssText = "width: 100%;margin: 0px;background: rgb(29, 29, 29);box-sizing: border-box;color: rgb(204, 204, 204);font-size: 15px;outline: none;padding: 20px;line-height: 24px;font-family: Consolas, Menlo, Monaco, &quot;Courier New&quot;, monospace;position: absolute;top: 0;bottom: 0;border: none;display:none"
+
+
+
+            var htmlEditor = quill.addContainer('ql-custom')
+            htmlEditor.appendChild(txtArea)
+
+            var myEditor = document.querySelector('#editor')
+
+            var html = myEditor.children[0].innerHTML
+            txtArea.value = html
+
+            quill.on('text-change', (delta, oldDelta, source) => {
+                var html = myEditor.children[0].innerHTML
+                txtArea.value = html
+            })
+
+            var customButton = document.querySelector('.ql-showHtml');
+            customButton.addEventListener('click', function() {
+                var html = txtArea.value
+                self.quill.pasteHTML(html)
+                txtArea.style.display = txtArea.style.display === 'none' ? '' : 'none'
+            });
+        </script>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#editor-container').show();
+        $('#msg').hide();
+    });
+</script>
+</body>
+</html>

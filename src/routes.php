@@ -8,9 +8,11 @@ spl_autoload_register(function ($classname) {
 });
 
 // Routes
-$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
+$app->get('/[{name:.*}]', function (Request $request, Response $response, array $args) {
     $conf = new Configuration();
+    if ($args) $name = $args['name'];
+    else $name = 'index';
     $content = new Content();
     if ($conf->ConfigExists() == false) return $this->nozomiRenderer->render($response, 'installconfirm.html');
-    else return $content->GetPage($response, $this, $args['name']);
+    else return $content->RenderPage($response, $this, $name);
 });

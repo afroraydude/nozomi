@@ -1,4 +1,7 @@
 <?php
+spl_autoload_register(function ($classname) {
+  require(__DIR__ . "/../classes/" . $classname . ".php");
+});
 class Configuration {
 
   function GetConfig() {
@@ -49,6 +52,8 @@ class Configuration {
 
     $configLocation = __DIR__ . '/../../site/config.ini';
 
+    $bf = new BaseFunc();
+
     try {
       $s = filter_var($body['sqlh']);
       $d = filter_var($body['sqld']);
@@ -69,7 +74,8 @@ class Configuration {
         'sqldb' => $d,
         'sqluser' => $u,
         'sqlpass' => $p,
-        'theme' => 'default'
+        'theme' => 'default',
+        'key' => $bf->random_str(50)
       );
 
       $conn = new PDO("mysql:host=$s;dbname=$d", $u, $p);

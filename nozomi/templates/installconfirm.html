@@ -1,9 +1,13 @@
-{% include 'header.html' %}
+<html>
+<head>
+    {% include 'header.html' %}
+</head>
+<body>
 <div class="container">
-<img src="/nozomi/assets/img/icon-left-font.png" style="height: 75px; display: block; margin: 0 auto; margin-top: 50px; margin-bottom: 50px;"/>
+    <div style="height: 150px">
+        <img src="/nozomi/assets/img/icon-left-font.png" style="display: block; height: inherit; margin: 0 auto; padding-top: 50px; margin-bottom: 50px;"/>
+    </div>
 <p>Nozomi and all of its dependencies are installed. <a href="/nozomi/setup">Click here</a> to enter setup.</p>
 </div>
-{% include 'footer.html' %}
-{% if name %}
-<p>{{ name }}</p>
-{% endif %}
+</body>
+</html>

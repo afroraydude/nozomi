@@ -23,8 +23,8 @@ $app->get('/nozomi/assets/{name:.*}', function (Request $request, Response $resp
 
 $app->get('/nozomi/setup', function (Request $request, Response $response, array $args) {
 
-})
+});
 
 $app->post('/nozomi/setup', function (Request $request, Response $response, array $args) {
 
-})
+});

@@ -13,9 +13,7 @@ $container = $app->getContainer();
 //https://www.slimframework.com/docs/v3/objects/router.html#how-to-create-routes
 
 $app->get('/nozomi/assets/{name:.*}', function (Request $request, Response $response, array $args) {
-  //$settings = $container->get('settings')['nozomi'];  
   $path = $args['name'];
-  //$containingFolder = $settings['data_path'];
   $containingFolder = __DIR__ . '/../nozomi/data/';
   $filepath = $containingFolder.$path;
   $file = @file_get_contents($filepath);

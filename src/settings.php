@@ -11,6 +11,7 @@ return [
         
         'nozomi' => [
             'pages_path' => __DIR__ . '/../nozomi/templates',
+            'site_path' => __DIR__ . '/../site',
             'cache_path' => false,
             'data_path' => __DIR__ . '../nozomi/data',
         ],

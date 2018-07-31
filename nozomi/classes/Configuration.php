@@ -68,7 +68,8 @@ class Configuration {
         'sqlhost' => $s,
         'sqldb' => $d,
         'sqluser' => $u,
-        'sqlpass' => $p
+        'sqlpass' => $p,
+        'theme' => 'default'
       );
 
       $conn = new PDO("mysql:host=$s;dbname=$d", $u, $p);

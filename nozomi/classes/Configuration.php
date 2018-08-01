@@ -74,7 +74,7 @@ class Configuration {
         'sqldb' => $d,
         'sqluser' => $u,
         'sqlpass' => $p,
-        'template' => 'default',
+        'theme' => 'default',
         'key' => $bf->random_str(50)
       );
 

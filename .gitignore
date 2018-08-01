@@ -5,3 +5,4 @@
 /nozomi/cache/*
 /site/*
 !/site/themes/default
+.idea

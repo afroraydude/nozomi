@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb061d02-57e8-46d8-b537-7f531f329b8b" name="Default" comment="Begin dashboard">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/nozomi/classes/Configuration.php" afterPath="$PROJECT_DIR$/nozomi/classes/Configuration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,13 +76,13 @@
         <entry file="file://$PROJECT_DIR$/nozomi/classes/Configuration.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="46" column="163" lean-forward="false" selection-start-line="46" selection-start-column="163" selection-end-line="46" selection-end-column="163" />
+              <caret line="46" column="209" lean-forward="false" selection-start-line="46" selection-start-column="209" selection-end-line="46" selection-end-column="209" />
               <folding>
-                <marker date="1533087900451" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
-                <marker date="1533087900451" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
-                <marker date="1533087900451" expanded="true" signature="1666:2044" ph="CREATE TABLE... pages" />
-                <marker date="1533087900451" expanded="true" signature="2063:2299" ph="CREATE TABLE... files" />
-                <marker date="1533087900451" expanded="true" signature="2318:2451" ph="INSERT INTO `nozomi`.`pages`... " />
+                <marker date="1533087987326" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
+                <marker date="1533087987326" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
+                <marker date="1533087987326" expanded="true" signature="1666:2047" ph="CREATE TABLE... pages" />
+                <marker date="1533087987326" expanded="true" signature="2066:2302" ph="CREATE TABLE... files" />
+                <marker date="1533087987326" expanded="true" signature="2321:2454" ph="INSERT INTO `nozomi`.`pages`... " />
               </folding>
             </state>
           </provider>
@@ -358,12 +356,12 @@
       <updated>1532988861682</updated>
       <workItem from="1532988869877" duration="5810000" />
       <workItem from="1533043505325" duration="22425000" />
-      <workItem from="1533079661072" duration="7001000" />
+      <workItem from="1533079661072" duration="7096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35236000" />
+    <option name="totallyTimeSpent" value="35331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -466,11 +464,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <marker date="1533087900451" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
-            <marker date="1533087900451" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
-            <marker date="1533087900451" expanded="true" signature="1666:2044" ph="CREATE TABLE... pages" />
-            <marker date="1533087900451" expanded="true" signature="2063:2299" ph="CREATE TABLE... files" />
-            <marker date="1533087900451" expanded="true" signature="2318:2451" ph="INSERT INTO `nozomi`.`pages`... " />
+            <marker date="1533087987326" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
+            <marker date="1533087987326" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
+            <marker date="1533087987326" expanded="true" signature="1666:2047" ph="CREATE TABLE... pages" />
+            <marker date="1533087987326" expanded="true" signature="2066:2302" ph="CREATE TABLE... files" />
+            <marker date="1533087987326" expanded="true" signature="2321:2454" ph="INSERT INTO `nozomi`.`pages`... " />
           </folding>
         </state>
       </provider>
@@ -519,11 +517,11 @@
         <state relative-caret-position="1360">
           <caret line="80" column="23" lean-forward="false" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
           <folding>
-            <marker date="1533087900451" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
-            <marker date="1533087900451" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
-            <marker date="1533087900451" expanded="true" signature="1666:2044" ph="CREATE TABLE... pages" />
-            <marker date="1533087900451" expanded="true" signature="2063:2299" ph="CREATE TABLE... files" />
-            <marker date="1533087900451" expanded="true" signature="2318:2451" ph="INSERT INTO `nozomi`.`pages`... " />
+            <marker date="1533087987326" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
+            <marker date="1533087987326" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
+            <marker date="1533087987326" expanded="true" signature="1666:2047" ph="CREATE TABLE... pages" />
+            <marker date="1533087987326" expanded="true" signature="2066:2302" ph="CREATE TABLE... files" />
+            <marker date="1533087987326" expanded="true" signature="2321:2454" ph="INSERT INTO `nozomi`.`pages`... " />
           </folding>
         </state>
       </provider>
@@ -798,13 +796,13 @@
     <entry file="file://$PROJECT_DIR$/nozomi/classes/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="46" column="163" lean-forward="false" selection-start-line="46" selection-start-column="163" selection-end-line="46" selection-end-column="163" />
+          <caret line="46" column="209" lean-forward="false" selection-start-line="46" selection-start-column="209" selection-end-line="46" selection-end-column="209" />
           <folding>
-            <marker date="1533087900451" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
-            <marker date="1533087900451" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
-            <marker date="1533087900451" expanded="true" signature="1666:2044" ph="CREATE TABLE... pages" />
-            <marker date="1533087900451" expanded="true" signature="2063:2299" ph="CREATE TABLE... files" />
-            <marker date="1533087900451" expanded="true" signature="2318:2451" ph="INSERT INTO `nozomi`.`pages`... " />
+            <marker date="1533087987326" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
+            <marker date="1533087987326" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
+            <marker date="1533087987326" expanded="true" signature="1666:2047" ph="CREATE TABLE... pages" />
+            <marker date="1533087987326" expanded="true" signature="2066:2302" ph="CREATE TABLE... files" />
+            <marker date="1533087987326" expanded="true" signature="2321:2454" ph="INSERT INTO `nozomi`.`pages`... " />
           </folding>
         </state>
       </provider>

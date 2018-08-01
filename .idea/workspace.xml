@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb061d02-57e8-46d8-b537-7f531f329b8b" name="Default" comment="Begin dashboard">
-      <change beforePath="$PROJECT_DIR$/nozomi/classes/Configuration.php" afterPath="$PROJECT_DIR$/nozomi/classes/Configuration.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nozomi/data/css/nozomi.css" />
+      <change beforePath="$PROJECT_DIR$/nozomi/classes/Authorization.php" afterPath="$PROJECT_DIR$/nozomi/classes/Authorization.php" />
+      <change beforePath="$PROJECT_DIR$/nozomi/templates/login.html" afterPath="$PROJECT_DIR$/nozomi/templates/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +41,41 @@
       <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authorization.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nozomi/classes/Authorization.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="23" />
+              <folding>
+                <marker date="1533088342448" expanded="true" signature="667:747" ph="SELECT `user... pages" />
+                <marker date="1533088342448" expanded="true" signature="1816:1888" ph="SELECT `user... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nozomi/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nozomi.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nozomi/data/css/nozomi.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="871">
+              <caret line="71" column="1" lean-forward="false" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -72,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nozomi/classes/Configuration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="46" column="209" lean-forward="false" selection-start-line="46" selection-start-column="209" selection-end-line="46" selection-end-column="209" />
+            <state relative-caret-position="68">
+              <caret line="29" column="91" lean-forward="true" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
               <folding>
                 <marker date="1533087987326" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
                 <marker date="1533087987326" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
@@ -107,6 +142,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -130,14 +166,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/nozomi/classes/Creation.php" />
-        <option value="$PROJECT_DIR$/nozomi/classes/Authorization.php" />
         <option value="$PROJECT_DIR$/src/dependencies.php" />
         <option value="$PROJECT_DIR$/nozomi/templates/header.html" />
-        <option value="$PROJECT_DIR$/nozomi/templates/login.html" />
         <option value="$PROJECT_DIR$/nozomi/templates/nav.html" />
         <option value="$PROJECT_DIR$/nozomi/templates/home.html" />
         <option value="$PROJECT_DIR$/nozomi/templates/404.html" />
-        <option value="$PROJECT_DIR$/nozomi/data/css/nozomi.css" />
         <option value="$PROJECT_DIR$/src/routes.php" />
         <option value="$PROJECT_DIR$/nozomi/classes/Content.php" />
         <option value="$PROJECT_DIR$/nozomi/templates/page.html" />
@@ -149,8 +182,11 @@
         <option value="$PROJECT_DIR$/src/nozomi.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/site/config.ini" />
         <option value="$PROJECT_DIR$/nozomi/classes/Configuration.php" />
+        <option value="$PROJECT_DIR$/site/config.ini" />
+        <option value="$PROJECT_DIR$/nozomi/classes/Authorization.php" />
+        <option value="$PROJECT_DIR$/nozomi/templates/login.html" />
+        <option value="$PROJECT_DIR$/nozomi/data/css/nozomi.css" />
       </list>
     </option>
   </component>
@@ -314,6 +350,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -356,12 +393,12 @@
       <updated>1532988861682</updated>
       <workItem from="1532988869877" duration="5810000" />
       <workItem from="1533043505325" duration="22425000" />
-      <workItem from="1533079661072" duration="7096000" />
+      <workItem from="1533079661072" duration="7577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35331000" />
+    <option name="totallyTimeSpent" value="35812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -569,17 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nozomi/classes/Authorization.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <marker date="1533047288259" expanded="true" signature="667:747" ph="SELECT `user... pages" />
-            <marker date="1533047288259" expanded="true" signature="1728:1800" ph="SELECT `user... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -601,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nozomi/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -636,14 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nozomi/data/css/nozomi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="69" column="15" lean-forward="false" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,18 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nozomi/classes/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="209" lean-forward="false" selection-start-line="46" selection-start-column="209" selection-end-line="46" selection-end-column="209" />
+        <state relative-caret-position="68">
+          <caret line="29" column="91" lean-forward="true" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
           <folding>
             <marker date="1533087987326" expanded="true" signature="1290:1559" ph="CREATE TABLE... users" />
             <marker date="1533087987326" expanded="true" signature="1578:1647" ph="INSERT INTO `users`... " />
@@ -804,6 +807,41 @@
             <marker date="1533087987326" expanded="true" signature="2066:2302" ph="CREATE TABLE... files" />
             <marker date="1533087987326" expanded="true" signature="2321:2454" ph="INSERT INTO `nozomi`.`pages`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nozomi/classes/Authorization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="23" />
+          <folding>
+            <marker date="1533088342448" expanded="true" signature="667:747" ph="SELECT `user... pages" />
+            <marker date="1533088342448" expanded="true" signature="1816:1888" ph="SELECT `user... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nozomi/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nozomi/data/css/nozomi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="71" column="1" lean-forward="false" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

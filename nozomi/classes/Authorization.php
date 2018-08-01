@@ -34,12 +34,18 @@ class Authorization {
     $config = $conf->GetConfig();
     $key = $config['key'];
     if($token) {
-      $decoded = JWT::decode($token, $key, array('HS256'));
-      $decoded_array = (array)$decoded;
-      $role = $this->get_role($decoded_array['user']);
-      if ($role <= $reqRole) return true;
-      else return false;
-    } else {
+      try {
+        $decoded = JWT::decode($token, $key, array('HS256'));
+        $decoded_array = (array)$decoded;
+        $role = $this->get_role($decoded_array['user']);
+        if ($role <= $reqRole) return true;
+        else return false;
+      } catch(Exception $e) {
+        return false;
+      }
+
+    }  else
+    {
       return false;
     }
   }

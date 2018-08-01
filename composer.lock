@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4fdcb50fe572eacead898332f693c35",
+    "content-hash": "e8cf315428cbfdd396cdb51bbf642554",
     "packages": [
+        {
+            "name": "afroraydude/nozomi-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afroraydude/nozomi-core.git",
+                "reference": "e32e30b9be48a0829d34939dc327c75148a01777"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afroraydude/nozomi-core/zipball/e32e30b9be48a0829d34939dc327c75148a01777",
+                "reference": "e32e30b9be48a0829d34939dc327c75148a01777",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "^5.0",
+                "monolog/monolog": "^1.17",
+                "php": ">=7.1.0",
+                "slim/slim": "^3.1",
+                "slim/twig-view": "^2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 < 6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nozomi\\Core\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "afroraydude",
+                    "email": "thomasray0@gmail.com"
+                }
+            ],
+            "description": "The core library for Nozomi",
+            "support": {
+                "source": "https://github.com/afroraydude/nozomi-core/tree/master",
+                "issues": "https://github.com/afroraydude/nozomi-core/issues"
+            },
+            "time": "2018-08-01T14:45:30+00:00"
+        },
         {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
@@ -36,60 +82,6 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
-        },
-        {
-            "name": "dflydev/fig-cookies",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dflydev/dflydev-fig-cookies.git",
-                "reference": "a59857139b9e30978b5b802b3631b5eaf34e8c66"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-fig-cookies/zipball/a59857139b9e30978b5b802b3631b5eaf34e8c66",
-                "reference": "a59857139b9e30978b5b802b3631b5eaf34e8c66",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": "^7.2",
-                "psr/http-message": "^1"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^4",
-                "phpstan/phpstan": "^0.10.1",
-                "phpunit/phpunit": "^7.2.6",
-                "squizlabs/php_codesniffer": "^3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dflydev\\FigCookies\\": "src/Dflydev/FigCookies"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com"
-                }
-            ],
-            "description": "Cookies for PSR-7 HTTP Message Interface.",
-            "keywords": [
-                "cookies",
-                "psr-7",
-                "psr7"
-            ],
-            "time": "2018-07-11T06:54:37+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -2143,7 +2135,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "afroraydude/nozomi-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

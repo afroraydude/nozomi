@@ -1,4 +1,4 @@
-![Logo](nozomi/data/img/icon-left-font.png)
+![Logo](https://github.com/afroraydude/nozomi-core/blob/master/src/img/icon-left-font.png)
 
 Nozomi is a simple, lightweight CMS built on top of Slim Framework. It is meant to be a spiritual successor to Muttnick.
 

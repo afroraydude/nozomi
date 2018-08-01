@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb061d02-57e8-46d8-b537-7f531f329b8b" name="Default" comment="Begin dashboard">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/nozomi/classes/Configuration.php" afterPath="$PROJECT_DIR$/nozomi/classes/Configuration.php" />
-      <change beforePath="$PROJECT_DIR$/nozomi/classes/Content.php" afterPath="$PROJECT_DIR$/nozomi/classes/Content.php" />
-      <change beforePath="$PROJECT_DIR$/nozomi/templates/footer.html" afterPath="$PROJECT_DIR$/nozomi/templates/footer.html" />
-      <change beforePath="$PROJECT_DIR$/nozomi/templates/installconfirm.html" afterPath="$PROJECT_DIR$/nozomi/templates/installconfirm.html" />
-      <change beforePath="$PROJECT_DIR$/nozomi/templates/page.html" afterPath="$PROJECT_DIR$/nozomi/templates/page.html" />
-      <change beforePath="$PROJECT_DIR$/nozomi/templates/setup.html" afterPath="$PROJECT_DIR$/nozomi/templates/setup.html" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.php" afterPath="$PROJECT_DIR$/src/middleware.php" />
-      <change beforePath="$PROJECT_DIR$/src/nozomi.php" afterPath="$PROJECT_DIR$/src/nozomi.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +31,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="34">
-                <caret line="2" column="120" lean-forward="false" selection-start-line="2" selection-start-column="120" selection-end-line="2" selection-end-column="120" />
+                <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -227,6 +217,19 @@
               <item name="afroraydude-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="afroraydude-cms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="nozomi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="afroraydude-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afroraydude-cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nozomi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="afroraydude-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afroraydude-cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nozomi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -318,12 +321,12 @@
       <updated>1532988861682</updated>
       <workItem from="1532988869877" duration="5810000" />
       <workItem from="1533043505325" duration="22425000" />
-      <workItem from="1533079661072" duration="4744000" />
+      <workItem from="1533079661072" duration="4958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32979000" />
+    <option name="totallyTimeSpent" value="33193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -749,7 +752,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="34">
-            <caret line="2" column="120" lean-forward="false" selection-start-line="2" selection-start-column="120" selection-end-line="2" selection-end-column="120" />
+            <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

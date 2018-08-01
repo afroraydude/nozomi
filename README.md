@@ -1,4 +1,4 @@
-![Logo](nozomi/data/img/icon-left-font.png)
+![Logo](https://github.com/afroraydude/nozomi-core/blob/master/src/img/icon-left-font.png)
 
 Nozomi is a simple, lightweight CMS built on top of Slim Framework. It is meant to be a spiritual successor to Muttnick.
 
@@ -11,6 +11,7 @@ Nozomi is a more robust and secure update to Muttnick. It integrates itself clos
 ### Requirements:
 * PHP 7+
 * MySQL/MariaDB
+* Composer
 
 ### How to install
 (Coming soon)

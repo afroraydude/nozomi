@@ -3,4 +3,5 @@
 !/logs/README.md
 
 /nozomi/cache/*
-/site/config.ini
+/site/*
+!/site/themes/default

@@ -15,13 +15,14 @@ class Content {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT `template`,`content`,`page-title` FROM pages WHERE `name` = ? LIMIT 1");
+    $stmt = $conn->prepare("SELECT `template`,`content`,`title` FROM pages WHERE `name` = ? LIMIT 1");
     $stmt->execute([$page]);
 
     $x = $stmt->fetch();
 
     if($x) {
-      $template = 'themes/'.$config['theme'].'/'.$x['template'];
+      $templateDir = 'themes/'.$config['theme'];
+      $template = $templateDir.'/'.$x['template'];
 
       return $app->siteRenderer->render($rs, $template, $x);
     } else {
@@ -41,7 +42,7 @@ class Content {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT `template`,`content`,`page-title` FROM pages WHERE `name` = ? LIMIT 1");
+    $stmt = $conn->prepare("SELECT * FROM pages WHERE `name` = ? LIMIT 1");
     $stmt->execute([$page]);
 
     $x = $stmt->fetch();

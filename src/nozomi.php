@@ -89,10 +89,22 @@ $app->get('/nozomi', function (Request $request, Response $response, array $args
 })->add($nozomiAuth);
 
 $app->get('/nozomi/page/new', function (Request $request, Response $response, array $args) {
-  $this->nozomiRenderer->render($response, 'page.html');
+  $conf = new Configuration();
+  $config = $conf->GetConfig();
+  $templateDir = 'themes/'.$config['theme'];
+
+
+  $templates = Array ();
+  foreach(array_filter(glob(__DIR__ . '/../site/'.$templateDir.'/*.html'), 'is_file') as $file) {
+    $file = str_replace(__DIR__ . '/../site/'.$templateDir.'/',"", $file);
+    array_push($templates, $file);
+  }
+
+  $x = Array ( 'templates' => $templates );
+  $this->nozomiRenderer->render($response, 'page.html', $x);
 })->add($nozomiDesignerAuth);
 
-$app->post('/nozomi/page/new', function (Request $request, Response $response, array $args) {
+$app->post('/nozomi/page/post', function (Request $request, Response $response, array $args) {
   $data = $request->getParsedBody();
   return $response->withJson($data);
 })->add($nozomiDesignerAuth);
@@ -105,5 +117,20 @@ $app->get('/nozomi/logout', function (Request $request, Response $response, arra
 $app->get('/nozomi/page/edit/{name:.*}', function (Request $request, Response $response, array $args) {
   $content = new Content();
   $data = $content->GetPage($args['name']);
-  $this->nozomiRenderer->render($response, 'page.html', $data);
-});
+
+  if($data) {
+
+    $conf = new Configuration();
+    $config = $conf->GetConfig();
+    $templateDir = 'themes/' . $config['theme'];
+    $templates = Array();
+    foreach (array_filter(glob(__DIR__ . '/../site/' . $templateDir . '/*.html'), 'is_file') as $file) {
+      $file = str_replace(__DIR__ . '/../site/' . $templateDir . '/', "", $file);
+      array_push($templates, $file);
+    }
+    $data['templates'] = $templates;
+    $this->nozomiRenderer->render($response, 'page.html', $data);
+  } else {
+    return $this->nozomiRenderer->render($response, '404.html');
+  }
+})->add($nozomiAuth);

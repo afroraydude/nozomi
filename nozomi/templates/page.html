@@ -24,12 +24,16 @@
         {% else %}
         <h1>Create Page</h1>
         {% endif %}
-
+        <div class="form-group">
+        <input class="form-control" value="{{ title }}"/>
+        </div>
+        <div class="form-group">
+        <input class="form-control" value="{{ name }}"/>
+        </div>
+        <div class="form-group">
         <div id="editor">
             {{ content|raw }}
         </div>
-        <br/>
-        <button class="btn btn-primary">Submit Page</button>
         <script>
             var toolbarOptions = [
                 ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -85,6 +89,19 @@
                 txtArea.style.display = txtArea.style.display === 'none' ? '' : 'none'
             });
         </script>
+        </div>
+        <div class="form-group">
+            <select>
+                {% for template in templates %}
+                <option>{{ template }}</option>
+                {% else %}
+                <option>None</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Submit Page</button>
+        </div>
     </div>
 </div>
 <script type="text/javascript">
@@ -93,5 +110,6 @@
         $('#msg').hide();
     });
 </script>
+</div>
 </body>
 </html>

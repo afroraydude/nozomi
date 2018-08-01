@@ -11,6 +11,7 @@ Nozomi is a more robust and secure update to Muttnick. It integrates itself clos
 ### Requirements:
 * PHP 7+
 * MySQL/MariaDB
+* Composer
 
 ### How to install
 (Coming soon)

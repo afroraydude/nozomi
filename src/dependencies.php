@@ -47,3 +47,17 @@ $container['logger'] = function ($c) {
   $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
   return $logger;
 };
+
+// Nozomi Plugins
+class MyPlugin extends \Nozomi\Core\NozomiPlugin {
+  public function registerRoutes() {
+    $this->app->get('/myplugin', function (\Slim\Http\Request $request, \Slim\Http\Response $response, array $args) {
+      return $response->getBody()->write("My plugin is working!");
+    });
+  }
+}
+
+// Register plugin
+$pluginHandler = new \Nozomi\Core\NozomiPluginHandler();
+$plugin = new MyPlugin($app);
+$pluginHandler->registerPlugin($plugin);

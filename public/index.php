@@ -1,7 +1,8 @@
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-error_reporting(E_ERROR);
+error_reporting(E_ALL);
+
 if (PHP_SAPI == 'cli-server') {
     // To help the built-in PHP dev server, check if the request was actually for
     // something which should probably be served as a static file
@@ -23,12 +24,7 @@ $app = new \Slim\App($settings);
 // Set up dependencies
 require __DIR__ . '/../src/dependencies.php';
 
-// Register middleware
-//require __DIR__ . '/../src/middleware.php';
-
-// Register routes
-//require __DIR__ . '/../src/nozomi.php';
-$nozomi = new \Nozomi\Core\Nozomi($app);
+$nozomi = new \Nozomi\Core\Nozomi($app, $pluginHandler);
 
 // Run app
 $app->run();

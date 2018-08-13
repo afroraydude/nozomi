@@ -8,13 +8,6 @@ return [
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
         ],
-        
-        'nozomi' => [
-            'pages_path' => __DIR__ . '/../vendor/afroraydude/nozomi-core/src/templates',
-            'site_path' => __DIR__ . '/../site',
-            'cache_path' => false,
-            'data_path' => __DIR__ . '../nozomi/data',
-        ],
 
         // Monolog settings
         'logger' => [

@@ -6,3 +6,5 @@
 /site/*
 !/site/themes/default
 .idea
+
+composer.lock

@@ -1,7 +1,7 @@
 ![Logo](https://github.com/afroraydude/nozomi-core/blob/master/src/img/icon-left-font.png)
 
-![version](https://img.shields.io/badge/version-0.0.1-orange.svg?longCache=true&style=flat-square
-) 
+[![version](https://img.shields.io/badge/version-0.0.1-orange.svg?longCache=true&style=flat-square
+)](https://github.com/afroraydude/nozomi-core)
 [![GitHub license](https://img.shields.io/github/license/afroraydude/nozomi.svg?style=flat-square)](https://github.com/afroraydude/nozomi/blob/master/LICENSE)
 
 

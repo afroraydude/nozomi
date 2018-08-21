@@ -17,8 +17,7 @@
     }],
     "require": {
         "php": ">=7.1.0",
-        "afroraydude/nozomi-core": "dev-master",
-        "afroraydude/nozomi-blog": "dev-master"
+        "afroraydude/nozomi-core": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"

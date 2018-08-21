@@ -2,7 +2,7 @@
     "name": "afroraydude/nozomi",
     "description": "A lightweight, robust CMS.",
     "keywords": ["microframework", "rest", "router", "psr7", "cms"],
-    "homepage": "http://github.com/afroraydude/nozomi",
+    "homepage": "http://nozomi.afroraydude.com",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -14,9 +14,6 @@
     "repositories": [{
         "type": "vcs",
         "url": "https://github.com/afroraydude/nozomi-core"
-    },{
-        "type": "vcs",
-        "url": "https://github.com/afroraydude/nozomi-blog"
     }],
     "require": {
         "php": ">=7.1.0",

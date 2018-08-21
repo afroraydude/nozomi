@@ -19,6 +19,4 @@ class MyPlugin extends \Nozomi\Core\NozomiPlugin {
 // Register plugin
 $pluginHandler = new \Nozomi\Core\NozomiPluginHandler();
 $plugin = new MyPlugin($app);
-$blogPlugin = new \Nozomi\Blog\NozomiBlog($app);
 $pluginHandler->registerPlugin($plugin);
-$pluginHandler->registerPlugin($blogPlugin);

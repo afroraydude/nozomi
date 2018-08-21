@@ -1,18 +1,38 @@
-version: '2'
-
-volumes:
-    logs:
-        driver: local
-
+version: '3'
 services:
-    slim:
-        image: php:7-alpine
-        working_dir: /var/www
-        command: php -S 0.0.0.0:8080 -t public
-        environment:
-            docker: "true"
-        ports:
-            - 8080:8080
-        volumes:
-            - .:/var/www
-            - logs:/var/www/logs
+  db:
+    image: mysql:5.7
+    environment:
+      - "MYSQL_DATABASE=nozomi"
+      - "MYSQL_USER=nozomi"
+      - "MYSQL_PASSWORD=toor"
+      - "MYSQL_ROOT_PASSWORD=toor"
+    ports:
+      - "33061:3306"
+  composer:
+    restart: 'no'
+    image: library/composer
+    command: install
+    volumes:
+      - ./:/app
+  app:
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+      - composer
+  web:
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - app

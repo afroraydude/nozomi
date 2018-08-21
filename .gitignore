@@ -5,6 +5,7 @@
 /nozomi/cache/*
 /site/*
 !/site/themes/default
+!/site/files/readme.txt
 .idea
 
 composer.lock

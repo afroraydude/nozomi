@@ -16,7 +16,7 @@
         "url": "https://github.com/afroraydude/nozomi-core"
     }],
     "require": {
-        "php": ">=7.1.0",
+        "php": ">=7.0.0",
         "afroraydude/nozomi-core": "dev-master"
     },
     "require-dev": {

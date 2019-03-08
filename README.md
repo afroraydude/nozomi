@@ -9,7 +9,7 @@ Nozomi is a simple, lightweight CMS built on top of Slim Framework. It is meant 
 ## Install
 
 ### Requirements:
-* PHP 7+
+* PHP 7.2+
 * MySQL/MariaDB
 * Composer
 
